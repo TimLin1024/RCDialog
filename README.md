@@ -50,7 +50,7 @@ allprojects {
 
 ```
 dependencies {
-        compile 'com.github.ivanljt:RCDialog:v1.0.0'
+        compile 'com.github.ivanljt:RCDialog:v1.0.1'
 }
 ```
 
