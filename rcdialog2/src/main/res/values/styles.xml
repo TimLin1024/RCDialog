@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="RoundRectStyle" parent="android:style/Theme.Light">
+        <!--窗口背景颜色-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗口边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在 Activity 之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

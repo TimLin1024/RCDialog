@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/bg_dialog">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="停止安全扫描"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingBottom="20dp"
+        android:paddingEnd="30dp"
+    android:paddingStart="30dp"
+    android:paddingTop="25dp"
+    android:textColor="@color/dark_gray"
+    android:textSize="13sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_title"
+    tools:text="确定要把该号码加入黑名单，并为其选择拦截内容？"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.3dp"
+        android:background="#bbbcbb"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sure"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_gray_rect_bottom_left_radius"
+        android:text="@string/cancel"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_sure"
+        app:layout_constraintTop_toBottomOf="@+id/tv_msg"/>
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="0dp"
+        android:background="#bbbcbb"
+        app:layout_constraintBottom_toBottomOf="@id/btn_sure"
+        app:layout_constraintLeft_toRightOf="@id/btn_cancel"
+        app:layout_constraintTop_toTopOf="@id/btn_sure"/>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="0.1dp"
+        android:background="@drawable/selector_gray_rect_bottom_right_radius"
+        android:text="@string/sure"
+        android:textColor="#47c0e4"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_cancel"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintLeft_toRightOf="@+id/btn_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_cancel"/>
+
+</android.support.constraint.ConstraintLayout>
